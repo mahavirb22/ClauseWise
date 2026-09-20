@@ -1,0 +1,18 @@
+FREELANCE SERVICES AGREEMENT (VERSION 2 - REVISED UNFAVORABLE)
+
+This Agreement is entered into by Client Corp ("Client") and Independent Developer ("Freelancer").
+
+1. PAYMENT TERMS (SECTION 1)
+Client shall pay Freelancer $100 per hour. Invoices submitted shall be processed and paid by Client within one hundred eighty (180) days of receipt (Net-180).
+
+2. TERMINATION WITHOUT NOTICE (SECTION 2)
+Client may terminate this Agreement immediately at any time without written notice and without any cure period for Freelancer.
+
+3. UNCAPPED LIABILITY & INDEMNIFICATION (SECTION 3)
+Freelancer shall indemnify, defend, and hold harmless Client against all third-party claims, liabilities, and damages without limitation or monetary cap.
+
+4. NON-COMPETE RESTRICTION (SECTION 4 - ADDED)
+Freelancer agrees not to engage in any software development or consulting for any competitor of Client worldwide for a period of three (3) years following termination.
+
+5. MANDATORY ARBITRATION (SECTION 5 - ADDED)
+All disputes shall be submitted to mandatory binding arbitration, and Freelancer shall pay all legal fees and costs incurred by Client regardless of outcome.

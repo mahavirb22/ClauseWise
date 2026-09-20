@@ -1,0 +1,18 @@
+PROMISSORY NOTE AND LOAN AGREEMENT
+
+This Loan Agreement ("Agreement") is executed between Summit Capital ("Lender") and Horizon LLC ("Borrower").
+
+SECTION 1. PRINCIPAL AMOUNT
+Lender agrees to loan Borrower the principal sum of One Hundred Thousand Dollars ($100,000.00 USD).
+
+SECTION 2. INTEREST RATE (SECTION 2)
+The unpaid principal balance shall accrue simple interest at a fixed rate of 5.0% per annum, payable in equal monthly installments.
+
+SECTION 3. DEFAULT & IMMEDIATE ACCELERATION
+Upon any payment failure exceeding 10 days, Lender may immediately declare the entire unpaid principal balance instantly due and payable without cure notice.
+
+SECTION 4. LIMITATION OF LIABILITY
+Lender's liability for any operational loss or delay in funding shall be limited exclusively to $500 USD.
+
+SECTION 5. DEFAULT INTEREST RATE (SECTION 5)
+In the event of default or payment delay, the applicable interest rate on all outstanding balances shall automatically adjust to 18.0% per annum retroactive to loan origination.

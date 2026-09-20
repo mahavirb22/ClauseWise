@@ -1,0 +1,15 @@
+FREELANCE SERVICES AGREEMENT (VERSION 1 - BALANCED)
+
+This Agreement is entered into by Client Corp ("Client") and Independent Developer ("Freelancer").
+
+1. PAYMENT TERMS (SECTION 1)
+Client shall pay Freelancer $100 per hour. Invoices submitted bi-weekly shall be paid by Client within thirty (30) days of receipt (Net-30).
+
+2. TERMINATION & CURE PERIOD (SECTION 2)
+Either party may terminate this Agreement by giving thirty (30) days prior written notice. In the event of alleged breach, the breaching party shall be given 15 days to cure.
+
+3. LIMITATION OF LIABILITY (SECTION 3)
+The aggregate liability of Freelancer under this Agreement shall be limited to the total fees paid by Client in the preceding twelve (12) months.
+
+4. INTELLECTUAL PROPERTY (SECTION 4)
+Upon receipt of full payment, Freelancer assigns to Client all right, title, and interest in custom deliverables created under this Agreement.

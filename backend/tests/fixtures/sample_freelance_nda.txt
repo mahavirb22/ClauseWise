@@ -1,0 +1,18 @@
+MUTUAL FREELANCE NON-DISCLOSURE AGREEMENT
+
+This Non-Disclosure Agreement ("Agreement") is made between Apex Tech Inc. ("Company") and John Smith ("Contractor").
+
+SECTION 1. CONFIDENTIAL INFORMATION
+Confidential Information includes all proprietary source code, software architecture, client lists, and trade secrets disclosed by either party.
+
+SECTION 2. TERM & DURATION (PREAMBLE)
+This Agreement and the confidentiality obligations herein shall remain in full force and effect for a period of two (2) years following the date of disclosure.
+
+SECTION 3. INTELLECTUAL PROPERTY & NON-COMPETE
+Contractor agrees not to engage in any freelance development or employment with any company operating in the software sector worldwide for a period of 5 years.
+
+SECTION 4. ARBITRATION
+All controversies or disputes shall be submitted to mandatory binding arbitration, and the prevailing party shall be entitled to recover reasonable attorney fees.
+
+SECTION 5. PERPETUAL CONFIDENTIALITY (SECTION 5)
+Notwithstanding any other provision in this Agreement, Contractor's obligation to maintain strict confidentiality of all disclosed materials shall survive indefinitely and continue in perpetuity.
