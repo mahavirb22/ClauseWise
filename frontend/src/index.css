@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#0a1128] text-slate-100 antialiased min-h-screen font-sans;
+  }
+
+  h1, h2, h3, .font-editorial {
+    @apply font-serif tracking-tight;
+  }
+}
+
+.editorial-panel {
+  background-color: #111936;
+  border: 1px solid #1e293b;
+}
+
+.editorial-card {
+  background-color: #162032;
+  border: 1px solid #233047;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.editorial-card:hover {
+  border-color: #475569;
+}
+
+/* Highlight animation for jumped conflicting clause */
+.clause-highlight {
+  animation: highlightPulse 2s ease-in-out;
+}
+
+@keyframes highlightPulse {
+  0% {
+    outline: 2px solid #f59e0b;
+    background-color: #451a03;
+  }
+  100% {
+    outline: 2px solid transparent;
+    background-color: #162032;
+  }
+}
