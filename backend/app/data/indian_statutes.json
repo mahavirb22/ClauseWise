@@ -1,0 +1,138 @@
+[
+  {
+    "id": "ica-sec-10",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 10",
+    "title": "What agreements are contracts",
+    "text": "All agreements are contracts if they are made by the free consent of parties competent to contract, for a lawful consideration and with a lawful object, and are not hereby expressly declared to be void.",
+    "topics": ["contract formation", "free consent", "lawful consideration", "capacity"]
+  },
+  {
+    "id": "ica-sec-16",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 16",
+    "title": "Undue influence defined",
+    "text": "A contract is said to be induced by 'undue influence' where the relations subsisting between the parties are such that one of the parties is in a position to dominate the will of the other and uses that position to obtain an unfair advantage over the other.",
+    "topics": ["undue influence", "unfair advantage", "unilateral terms", "unconscionable contracts"]
+  },
+  {
+    "id": "ica-sec-23",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 23",
+    "title": "What considerations and objects are lawful, and what not",
+    "text": "The consideration or object of an agreement is lawful, unless it is forbidden by law, or is of such a nature that, if permitted, it would defeat the provisions of any law, or is fraudulent, or involves or implies injury to the person or property of another, or the Court regards it as immoral, or opposed to public policy.",
+    "topics": ["unlawful object", "public policy", "illegal terms", "forbidden by law"]
+  },
+  {
+    "id": "ica-sec-27",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 27",
+    "title": "Agreement in restraint of trade void",
+    "text": "Every agreement by which any one is restrained from exercising a lawful profession, trade or business of any kind, is to that extent void. Exception 1: One who sells the goodwill of a business may agree with the buyer to refrain from carrying on a similar business within specified local limits.",
+    "topics": ["restraint of trade", "non compete", "freelance restrictions", "employment restriction"]
+  },
+  {
+    "id": "ica-sec-28",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 28",
+    "title": "Agreements in restraint of legal proceedings void",
+    "text": "Every agreement by which any party thereto is restricted absolutely from enforcing his rights under or in respect of any contract, by the usual legal proceedings in the ordinary tribunals, or which limits the time within which he may thus enforce his rights, is void.",
+    "topics": ["restraint of legal proceedings", "limitation period", "jurisdiction restriction", "arbitration carveout"]
+  },
+  {
+    "id": "ica-sec-39",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 39",
+    "title": "Effect of refusal of party to perform promise wholly",
+    "text": "When a party to a contract has refused to perform, or disabled himself from performing, his promise in its entirety, the promisee may put an end to the contract, unless he has signified, by words or conduct, his acquiescence in its continuance.",
+    "topics": ["termination for breach", "refusal to perform", "rescission", "material breach"]
+  },
+  {
+    "id": "ica-sec-55",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 55",
+    "title": "Effect of failure to perform at fixed time, in contract in which time is essential",
+    "text": "When a party to a contract promises to do a certain thing at or before a specified time, and fails to do any such thing at or before the specified time, the contract, or so much of it as has not been performed, becomes voidable at the option of the promisee, if the intention of the parties was that time should be of the essence of the contract.",
+    "topics": ["time is of the essence", "delay in performance", "cancellation", "notice period"]
+  },
+  {
+    "id": "ica-sec-73",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 73",
+    "title": "Compensation for loss or damage caused by breach of contract",
+    "text": "When a contract has been broken, the party who suffers by such breach is entitled to receive, from the party who has broken the contract, compensation for any loss or damage caused to him thereby, which naturally arose in the usual course of things from such breach, or which the parties knew, when they made the contract, to be likely to result from the breach of it.",
+    "topics": ["breach damages", "compensation", "natural losses", "uncapped liability"]
+  },
+  {
+    "id": "ica-sec-74",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 74",
+    "title": "Compensation for breach of contract where penalty stipulated for",
+    "text": "When a contract has been broken, if a sum is named in the contract as the amount to be paid in case of such breach, or if the contract contains any other stipulation by way of penalty, the party complaining of the breach is entitled, whether or not actual damage or loss is proved to have been caused thereby, to receive from the party who has broken the contract reasonable compensation not exceeding the amount so named or, as the case may be, the penalty stipulated for.",
+    "topics": ["penalty clause", "liquidated damages", "unreasonable penalty", "excessive damages"]
+  },
+  {
+    "id": "ica-sec-75",
+    "statute": "Indian Contract Act, 1872",
+    "section": "Section 75",
+    "title": "Party rightfully rescinding contract, entitled to compensation",
+    "text": "A person who rightfully rescinds a contract is entitled to compensation for any damage which he has sustained through the non-fulfilment of the contract.",
+    "topics": ["rescission compensation", "termination damages", "reimbursement"]
+  },
+  {
+    "id": "cpa-sec-2-46",
+    "statute": "Consumer Protection Act, 2019",
+    "section": "Section 2(46)",
+    "title": "Unfair contract defined",
+    "text": "Unfair contract means a contract between a manufacturer or trader or service provider on one hand, and a consumer on the other, having terms which cause significant change in the rights of such consumer, including requiring excessive security deposit, imposing unreasonable penalty, or unilateral termination without reasonable cause.",
+    "topics": ["unfair contract", "consumer rights", "excessive deposit", "unilateral termination", "unreasonable penalty"]
+  },
+  {
+    "id": "cpa-sec-2-47",
+    "statute": "Consumer Protection Act, 2019",
+    "section": "Section 2(47)",
+    "title": "Unfair trade practice defined",
+    "text": "Unfair trade practice means a trade practice which, for the purpose of promoting the sale, use or supply of any goods or for the provision of any service, adopts any unfair method or unfair or deceptive practice.",
+    "topics": ["unfair trade practice", "deceptive terms", "misleading clauses"]
+  },
+  {
+    "id": "cpa-sec-84",
+    "statute": "Consumer Protection Act, 2019",
+    "section": "Section 84",
+    "title": "Liability of product manufacturer",
+    "text": "A product manufacturer shall be liable in a product liability action, if the product contains a manufacturing defect, or is defective in design, or deviates from manufacturing specifications.",
+    "topics": ["product liability", "manufacturer liability", "defective service"]
+  },
+  {
+    "id": "it-sec-43a",
+    "statute": "Information Technology Act, 2000",
+    "section": "Section 43A",
+    "title": "Compensation for failure to protect data",
+    "text": "Where a body corporate, possessing, dealing or handling any sensitive personal data or information in a computer resource which it owns, controls or operates, is negligent in implementing and maintaining reasonable security practices and procedures and thereby causes wrongful loss or wrongful gain to any person, such body corporate shall be liable to pay damages by way of compensation to the person so affected.",
+    "topics": ["data protection", "data breach", "sensitive personal data", "negligence"]
+  },
+  {
+    "id": "it-sec-72a",
+    "statute": "Information Technology Act, 2000",
+    "section": "Section 72A",
+    "title": "Punishment for disclosure of information in breach of lawful contract",
+    "text": "Save as otherwise provided in this Act or any other law for the time being in force, any person who has secured access to any material containing personal information about another person, with the intent to cause or knowing that he is likely to cause wrongful loss or wrongful gain discloses, without the consent of the person concerned, or in breach of a lawful contract, such material, shall be punished with imprisonment or fine.",
+    "topics": ["confidentiality breach", "disclosure of personal data", "unlawful disclosure"]
+  },
+  {
+    "id": "dpdp-sec-6",
+    "statute": "Digital Personal Data Protection Act, 2023",
+    "section": "Section 6",
+    "title": "Consent for processing personal data",
+    "text": "The consent given by the Data Principal shall be free, specific, informed, unconditional and unambiguous with a clear affirmative action, and shall signify an agreement to the processing of her personal data for the specified purpose.",
+    "topics": ["data privacy", "free consent", "data principal", "data processing"]
+  },
+  {
+    "id": "dpdp-sec-8",
+    "statute": "Digital Personal Data Protection Act, 2023",
+    "section": "Section 8",
+    "title": "General duties of Data Fiduciary",
+    "text": "A Data Fiduciary shall be responsible for complying with the provisions of this Act in respect of any processing undertaken by it or on its behalf, and shall implement appropriate technical and organisational measures to ensure effective observance of this Act and adopt reasonable security safeguards to prevent personal data breach.",
+    "topics": ["data fiduciary duties", "data security safeguards", "data breach notification"]
+  }
+]
