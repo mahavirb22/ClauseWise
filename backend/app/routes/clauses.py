@@ -79,6 +79,26 @@ async def extract_and_analyze_clauses(doc_id: str = Path(..., description="Docum
     )
 
 
+def get_clause_risk(c) -> str:
+    if hasattr(c, "risk_level"):
+        rl = c.risk_level
+        return (rl.value if hasattr(rl, "value") else str(rl)).lower()
+    if isinstance(c, dict):
+        val = c.get("riskLevel") or c.get("risk_level") or "low"
+        return str(val).lower()
+    return "low"
+
+
+def get_clause_category(c) -> str:
+    if hasattr(c, "category"):
+        cat = c.category
+        return (cat.value if hasattr(cat, "value") else str(cat)).lower()
+    if isinstance(c, dict):
+        val = c.get("category") or "other"
+        return str(val).lower()
+    return "other"
+
+
 @router.get("", response_model=ClausesResponse)
 async def list_clauses(
     doc_id: Optional[str] = Query(None, alias="docId"),
@@ -102,9 +122,12 @@ async def list_clauses(
                 clauses.extend(d["clauses"])
 
     if risk_level:
-        clauses = [c for c in clauses if c.risk_level == risk_level]
+        target_risk = (risk_level.value if hasattr(risk_level, 'value') else str(risk_level)).lower()
+        clauses = [c for c in clauses if get_clause_risk(c) == target_risk]
+
     if category:
-        clauses = [c for c in clauses if c.category == category]
+        target_cat = (category.value if hasattr(category, 'value') else str(category)).lower()
+        clauses = [c for c in clauses if get_clause_category(c) == target_cat]
 
     return ClausesResponse(
         docId=target_doc_id,

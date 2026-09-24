@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Header } from '../components/Header';
 import { ClauseCard } from '../components/ClauseCard';
 import { fetchClauses, extractClausesForDoc } from '../api/clauses';
-import { ClausesResponse, RiskLevel } from '../types/clause';
+import { ClausesResponse } from '../types/clause';
 import { Filter, Loader2, Play } from 'lucide-react';
 
 export const ClausesPage: React.FC = () => {
   const [docId, setDocId] = useState('doc-rental-sample');
   const [data, setData] = useState<ClausesResponse | null>(null);
-  const [selectedRisk, setSelectedRisk] = useState<RiskLevel | 'ALL'>('ALL');
+  const [selectedRisk, setSelectedRisk] = useState<string>('ALL');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -22,7 +22,7 @@ export const ClausesPage: React.FC = () => {
     } catch (err: any) {
       // Fallback to fetch existing clauses if doc already extracted
       try {
-        const fetchRes = await fetchClauses({ docId, riskLevel: selectedRisk === 'ALL' ? undefined : selectedRisk });
+        const fetchRes = await fetchClauses({ docId });
         setData(fetchRes);
       } catch (fetchErr: any) {
         setError(err.message || 'Failed to extract clauses');
@@ -34,7 +34,17 @@ export const ClausesPage: React.FC = () => {
 
   useEffect(() => {
     handleRunExtraction();
-  }, [selectedRisk]);
+  }, []);
+
+  const filteredClauses = useMemo(() => {
+    if (!data?.clauses) return [];
+    if (selectedRisk === 'ALL') return data.clauses;
+    const target = selectedRisk.toLowerCase();
+    return data.clauses.filter((clause) => {
+      const level = (clause.riskLevel || '').toLowerCase();
+      return level === target;
+    });
+  }, [data, selectedRisk]);
 
   return (
     <div className="space-y-6">
@@ -69,20 +79,23 @@ export const ClausesPage: React.FC = () => {
           <Filter className="w-4 h-4 text-slate-400" />
           <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Risk Filter:</span>
           <div className="flex flex-wrap gap-1.5 ml-2">
-            {(['ALL', 'high', 'medium', 'low'] as const).map((level) => (
-              <button
-                type="button"
-                key={level}
-                onClick={() => setSelectedRisk(level as any)}
-                className={`px-3 py-1 rounded-md text-xs font-medium transition-all ${
-                  selectedRisk === level
-                    ? 'bg-amber-600 text-slate-950 font-semibold'
-                    : 'bg-[#0a1128] text-slate-400 hover:text-slate-200 border border-[#1e293b]'
-                }`}
-              >
-                {level.toUpperCase()}
-              </button>
-            ))}
+            {(['ALL', 'high', 'medium', 'low'] as const).map((level) => {
+              const isActive = selectedRisk.toLowerCase() === level.toLowerCase();
+              return (
+                <button
+                  type="button"
+                  key={level}
+                  onClick={() => setSelectedRisk(level)}
+                  className={`px-3 py-1 rounded-md text-xs font-medium transition-all ${
+                    isActive
+                      ? 'bg-amber-600 text-slate-950 font-semibold shadow-sm'
+                      : 'bg-[#0a1128] text-slate-400 hover:text-slate-200 border border-[#1e293b]'
+                  }`}
+                >
+                  {level.toUpperCase()}
+                </button>
+              );
+            })}
           </div>
         </div>
       </form>
@@ -118,13 +131,29 @@ export const ClausesPage: React.FC = () => {
       {data && data.isLegalDocument !== false && !loading && (
         <div className="space-y-4">
           <div className="flex items-center justify-between text-xs text-slate-400 px-1">
-            <span>Showing {data.clauses.length} clauses for Document <code className="text-amber-400 font-mono">{data.docId}</code></span>
+            <span>
+              Showing <strong className="text-slate-200">{filteredClauses.length}</strong> of {data.clauses.length} clauses for Document <code className="text-amber-400 font-mono">{data.docId}</code>
+              {selectedRisk !== 'ALL' && (
+                <span className="text-amber-400 font-semibold ml-1.5">
+                  ({selectedRisk.toUpperCase()} Risk Filter Active)
+                </span>
+              )}
+            </span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {data.clauses.map((clause) => (
-              <ClauseCard key={clause.id} clause={clause} />
-            ))}
+            {filteredClauses.length > 0 ? (
+              filteredClauses.map((clause) => (
+                <ClauseCard key={clause.id} clause={clause} />
+              ))
+            ) : (
+              <div className="col-span-2 editorial-panel rounded-lg p-8 text-center text-slate-400 space-y-1">
+                <div className="text-sm font-semibold text-slate-300">No {selectedRisk.toUpperCase()} risk clauses found</div>
+                <div className="text-xs text-slate-500">
+                  None of the {data.clauses.length} extracted clauses match the "{selectedRisk.toUpperCase()}" risk level. Try selecting a different filter.
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
