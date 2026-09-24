@@ -27,7 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             </div>
             <div>
               <span className="text-xl font-serif font-bold text-slate-100 tracking-tight">
-                ClauseWise
+                JurisMind
               </span>
               <span className="ml-2 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider rounded bg-[#162032] text-amber-400 border border-[#233047]">
                 Legal Assistant

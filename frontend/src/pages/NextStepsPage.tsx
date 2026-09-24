@@ -40,7 +40,7 @@ export const NextStepsPage: React.FC = () => {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ClauseWise - Consultation Brief (${data.fileName})</title>
+  <title>JurisMind - Consultation Brief (${data.fileName})</title>
   <style>
     body { font-family: 'Georgia', serif; color: #111; padding: 40px; line-height: 1.6; max-width: 800px; margin: 0 auto; }
     h1 { font-size: 22px; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 5px; }

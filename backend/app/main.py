@@ -9,7 +9,7 @@ from app.routes import (
 )
 
 app = FastAPI(
-    title="ClauseWise API",
+    title="JurisMind API",
     description="Backend service for AI-powered legal document analysis, clause extraction, comparison, and Q&A.",
     version="0.1.0",
     docs_url="/docs",
@@ -41,7 +41,7 @@ app.include_router(nextsteps_router)
 @app.get("/")
 async def root():
     return {
-        "app": "ClauseWise API",
+        "app": "JurisMind API",
         "status": "running",
         "version": "0.1.0",
         "docs": "/docs"

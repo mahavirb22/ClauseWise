@@ -1,13 +1,13 @@
-# ClauseWise - Legal Document Assistant
+# JurisMind - Legal Document Assistant
 
-**ClauseWise** is an AI-powered legal-document assistant monorepo built with **FastAPI (Python 3.11)** for the backend, **React (Vite) + TypeScript + TailwindCSS** for the frontend, and **ChromaDB** for vector storage and retrieval.
+**JurisMind** is an AI-powered legal-document assistant monorepo built with **FastAPI (Python 3.11)** for the backend, **React (Vite) + TypeScript + TailwindCSS** for the frontend, and **ChromaDB** for vector storage and retrieval.
 
 ---
 
 ## 🏗 Repository Structure
 
 ```
-ClauseWise/
+JurisMind/
 ├── backend/                  # FastAPI Python 3.11 Server
 │   ├── app/
 │   │   ├── routes/           # Feature endpoints (ingest, clauses, compare, ask, nextsteps)

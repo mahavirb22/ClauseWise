@@ -5,7 +5,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: clausewise-backend
+    container_name: jurismind-backend
     ports:
       - "8000:8000"
     environment:
@@ -22,7 +22,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: clausewise-frontend
+    container_name: jurismind-frontend
     ports:
       - "5173:5173"
     environment:
@@ -36,7 +36,7 @@ services:
 
   chromadb:
     image: chromadb/chroma:0.4.24
-    container_name: clausewise-chromadb
+    container_name: jurismind-chromadb
     ports:
       - "8001:8000"
     volumes:

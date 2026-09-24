@@ -33,7 +33,7 @@ export const App: React.FC = () => {
         {renderActiveTab()}
       </main>
       <footer className="border-t border-slate-900 py-6 text-center text-xs text-slate-600">
-        <p>ClauseWise Legal AI Monorepo • Backend FastAPI • Frontend React Vite Tailwind • ChromaDB</p>
+        <p>JurisMind Legal AI Monorepo • Backend FastAPI • Frontend React Vite Tailwind • ChromaDB</p>
       </footer>
     </div>
   );
